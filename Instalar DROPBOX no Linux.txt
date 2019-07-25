@@ -1,0 +1,66 @@
+# Visite o link oficial do Dropbox:
+https://www.dropbox.com/install
+
+
+# Escolha qual a versäo que você vai usar na sua máquina:
+
+# 32-bits:
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86" | tar xzf -
+
+# 64-bits:
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+
+
+# Execute o seguinte comando na linha do Terminal para instalar:
+
+~/.dropbox-dist/dropboxd
+
+
+# Na instalaçäo, se abrirá a janela do Navegador Web para você logar ou criar uma conta Dropbox. 
+# Após isso, automaticamente a conta estará vinculada ao seu computador.
+
+
+# A partir de agora vc já pode copiar/mover qualquer arquivo (foto) para a pasta ~/Dropbox! 
+# Porém para sincronizar todos os dispositivos com os arquivow desta pasta, é preciso executar um script Python...
+
+
+# Por isso, baixe esse script Python que fará as sincronizaçöes:
+
+https://www.dropbox.com/download?dl=packages/dropbox.py
+
+
+# Para sincronizar pasta digitar na linha de comando:
+
+python3 dropbox.py start
+
+
+
+
+# Existem outras opçöes para serem utilizadas neste script Python, por exemplo, se vc digita apenas:
+
+python3 dropbox.py
+
+Dropbox command-line interface
+
+commands:
+
+Note: use dropbox help <command> to view usage for a specific command.
+
+ autostart    automatically start Dropbox at login
+ exclude      ignores/excludes a directory from syncing
+ filestatus   get current sync status of one or more files
+ help         provide help
+ lansync      enables or disables LAN sync
+ ls           list directory contents with current sync status
+ proxy        set proxy settings for Dropbox
+ puburl       get public url of a file in your Dropbox's public folder
+ running      return whether Dropbox is running
+ sharelink    get a shared link for a file in your Dropbox
+ start        start dropboxd
+ status       get current status of the dropboxd
+ stop         stop dropboxd
+ throttle     set bandwidth limits for Dropbox
+ update       download latest version of Dropbox
+ version      print version information for Dropbox
+ 
+ # Autor: Helio Giroto
