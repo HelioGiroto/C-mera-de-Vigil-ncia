@@ -41,7 +41,7 @@ do
 	
 	if [[ $tolerancia -ne 0 ]] 
 	then
-		cvlc --play-and-exit ~/beep.mp3
+		cvlc --play-and-exit ~/beep.mp3		# sudo apt install vlc-bin
 		tee DETECT_$foto_atual ~/Dropbox/$foto_atual < $foto_atual &> /dev/null
 	fi
 
